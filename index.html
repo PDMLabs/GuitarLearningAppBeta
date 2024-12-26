@@ -1,0 +1,86 @@
+### **1. HTML File (`index.html`)**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Guitar Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Electric Guitar</h1>
+        <nav>
+            <a href="#chords">Chords</a>
+            <a href="#scales">Scales</a>
+            <a href="#techniques">Techniques</a>
+            <a href="#tools">Practice Tools</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Chords Section -->
+        <section id="chords">
+            <h2>Chords</h2>
+            <p>Learn the most essential guitar chords to start playing songs.</p>
+            <div class="chord-diagram">
+                <h3>E Minor</h3>
+                <img src="chord-em.png" alt="E Minor Chord" width="200">
+                <audio controls>
+                    <source src="audio/em-chord.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Scales Section -->
+        <section id="scales">
+            <h2>Scales</h2>
+            <p>Practice your scales to develop soloing skills and finger strength.</p>
+            <div class="scale-diagram">
+                <h3>Minor Pentatonic Scale</h3>
+                <img src="scale-minor-pentatonic.png" alt="Minor Pentatonic Scale" width="300">
+            </div>
+        </section>
+
+        <!-- Techniques Section -->
+        <section id="techniques">
+            <h2>Techniques</h2>
+            <p>Learn techniques like hammer-ons, pull-offs, and slides to enhance your playing.</p>
+            <ul>
+                <li><strong>Hammer-On:</strong> Quickly press a finger onto the string after plucking.</li>
+                <li><strong>Pull-Off:</strong> Flick your finger off the string to create a second note.</li>
+                <li><strong>Slide:</strong> Slide your finger up or down the fretboard to connect notes.</li>
+            </ul>
+        </section>
+
+        <!-- Practice Tools Section -->
+        <section id="tools">
+            <h2>Practice Tools</h2>
+
+            <!-- Metronome -->
+            <div>
+                <h3>Metronome</h3>
+                <button id="start-metronome">Start</button>
+                <button id="stop-metronome">Stop</button>
+            </div>
+
+            <!-- Timer -->
+            <div>
+                <h3>Practice Timer</h3>
+                <input type="number" id="timer" placeholder="Set time (minutes)">
+                <button onclick="startTimer()">Start Timer</button>
+                <p id="timer-display">Time Remaining: --</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Electric Guitar Learning App</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+```
